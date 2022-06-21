@@ -1,0 +1,160 @@
+@import 'cores.css';
+@import 'cabecalho.css';
+@import 'rodape.css';
+@import 'layout-paginas.css';
+@import 'barra-rolagem.css';
+@import 'mensagem-erro.css';
+
+body {
+  color: #0c0c0c;
+  background-color: var(--azul-100);
+  overflow-x: hidden;
+}
+
+.area-cursos {
+  color: #050505;
+}
+
+.header-pagina-cursos {
+  margin-bottom: 15px;
+}
+
+.container-cursos {
+  margin-top: 45px;
+}
+
+.header-cursos {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.curso {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  background-color: var(--azul-50);
+  border: 1px solid #a4a4a4;
+  margin-top: 25px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  border-radius: 25px;
+}
+
+.conteudo-curso {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imagem-curso {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.detalhes-curso h5 {
+  font-weight: 600;
+}
+
+.dados-curso {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dados-curso h6 {
+  margin: 0;
+  margin-right: 15px;
+}
+
+.opcoes-curso {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.botao-favorito {
+  margin-right: 25px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 20px;
+  color: inherit;
+}
+
+.botao-matricula {
+  display: inline-block;
+  background-color: var(--azul-1000);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid var(--azul-1000);
+  outline: none;
+}
+
+.botao-matricula:hover {
+  background-color: var(--azul-50);
+  color: var(--azul-1000);
+}
+
+#popupMatricula .modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  display: inline-block;
+}
+
+.formulario label,
+.formulario input,
+.formulario select {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+  width: 100%;
+}
+
+.formulario #funcionario,
+.formulario #labelFuncionario {
+  display: inline;
+  margin: 8px 0px;
+  width:auto;
+}

@@ -1,0 +1,100 @@
+#barra-lateral {
+    position: fixed;
+    width: 240px;
+    overflow: hidden;
+    background-color: var(--azul-500);
+    z-index: 2;
+    border:solid 1px;
+    border-radius: 35px;
+}
+
+#barra-lateral .titulo-barra {
+    padding: 5px 10px;
+    font-size: 28px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: var(--azul-500);
+    user-select: none;
+    border-radius: 35px;
+}
+
+#barra-lateral a {
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-left: 5px solid transparent;
+    transition: all .5s ease;
+    text-decoration: none;
+
+}
+
+#barra-lateral a.ativo,
+#barra-lateral a:hover {
+    background-color: var(--azul-400);
+    border-left: 5px solid var(--azul-1000);
+    color: var(--azul-1000);
+    
+}
+
+#barra-lateral a i {
+    font-size: 23px;
+    margin-right: 16px;
+}
+
+#barra-lateral a span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.aberto {
+    left: 0px;
+    transition: left 1s;
+}
+
+.fechado {
+    left: -240px;
+    transition: left 1s;
+}
+
+@media (max-width: 767px) {
+    #barra-lateral {
+        height: auto;
+        width: 70px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #barra-lateral .titulo-barra {
+        display: none;
+    }
+
+    #barra-lateral span {
+        position: absolute;
+        margin-left: 23px;
+        opacity: 0;
+    }
+
+    #barra-lateral a {
+        height: 60px;
+    }
+
+    #barra-lateral a i {
+        margin-left: -10px;
+    }
+
+    #barra-lateral a:hover {
+        width: 200px;
+        background: inherit;
+    }
+
+    #barra-lateral a:hover span {
+        opacity: 1;
+        visibility: visible;
+    }
+}

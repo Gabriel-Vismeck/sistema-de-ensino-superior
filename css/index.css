@@ -1,0 +1,268 @@
+@import 'cores.css';
+@import 'cabecalho.css';
+@import 'rodape.css';
+@import 'layout-paginas.css';
+@import 'barra-rolagem.css';
+@import 'mensagem-erro.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--azul-1000);
+    background-color: var(--azul-100);
+    overflow-x: hidden;
+}
+
+.main-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    padding-bottom: 20px;
+}
+
+.main-banner-texto {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: auto;
+    color: black;
+}
+
+.main-banner-texto p {
+    font-size: 2.25rem;
+    line-height: 3.2rem;
+    max-width: 450px;
+}
+
+.main-banner-img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: auto;
+    padding: 40px;
+}
+
+.main-banner-img img {
+    width: 300px;
+}
+
+.cta {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta p {
+    color: rgb(95, 95, 95);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #0C2074;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-cta {
+    color: var(--azul-50);
+    padding: 5px 15px;
+    border-radius: 25px;
+    background-color: var(--azul-1000);
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    transition: all .3s ease;
+}
+
+.botao-cta:hover {
+    background-color: var(--azul-500);
+    color: var(--azul-1000);
+}
+
+.botao-cta>a {
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.container-curadoria {
+    background: var(--azul-400);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.circulo {
+    height: 250px;
+    width: 250px;
+    background-color: var(--azul-50);
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.texto-curadoria {
+    color: var(--azul-1000);
+    font-size: 18px;
+    height: 110px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.img-curadoria {
+    height: 120px;
+    margin: 2px;
+    align-self: flex-end;
+}
+
+.container-login {
+    background: var(--azul-1000);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-login {
+    background-color: var(--azul-300);
+    text-align: center;
+    border-radius: 25px;
+    width: 360px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nome {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-left: 30px;
+    color: black;
+}
+
+.campo-nome {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    background: var(--azul-50);
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.senha {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.campo-senha {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    background: var(--azul-50);
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.button {
+    padding: 5px 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    width: max-content;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--azul-1000);
+    color: var(--azul-50);
+    transition: all .3s ease;
+}
+
+.button:hover {
+    background-color: var(--azul-500);
+    color: var(--azul-1000);
+}
+
+.texto-login {
+    padding-left: 40px;
+    color: var(--azul-50);
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    width: 360px;
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+    .main-banner {
+        display: inline;
+    }
+
+    .main-banner-texto {
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .main-banner-texto p {
+        color: #000;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        margin: auto;
+    }
+
+    .main-banner-img {
+        display: none;
+    }
+
+    .cta {
+        max-width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}

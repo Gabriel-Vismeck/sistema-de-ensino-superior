@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Sistema de gerenciamento de ensino superior</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/contas.js"></script>
+  <script src="/js/usuarioLogado.js"></script>
+  <script src="/js/login.js"></script>
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+  <div class="pagina">
+    <!-- banner principal -->
+    <header>
+      <a href="/index.html">
+        <img src="/img/logo.png" alt="logo" />
+      </a>
+      <nav>
+        <a href="/index.html">Menu</a>
+        <a href="/paginas/cursos.html">Cursos</a>
+      </nav>
+    </header>
+    <div class="conteudo">
+      <div class="main-banner">
+        <div class="main-banner-texto">
+          <p>Precisando de uma ajuda para trilhar seu futuro? Quer ingressar num ensino superior de qualidade? Nós podemos
+            te ajudar!</p>
+        </div>
+
+        <div class="main-banner-img">
+          <img src="/img/img_topo.png" />
+        </div>
+
+        <div class="cta">
+          <p>Clique aqui para ter acesso a todos os nossos cursos disponíveis para matrícula!</p>
+
+          <button class="botao-cta">
+            <a href="/paginas/cursos.html">Junte-se a nós!</a>
+          </button>
+        </div>
+      </div>
+      <!-- fim do banner principal -->
+
+      <!-- form -->
+      <div class="container-login">
+        <form class="form-login" action="/paginas/portaldoaluno.html">
+          <div class="nome">
+            Nome:
+          </div>
+          <input class="campo-nome" id="login" name="name" type="text" required placeholder="Digite seu login" />
+          <div class="senha">
+            Senha:
+          </div>
+          <input class="campo-senha" id="senha" name="senha" type="password" required placeholder="Digite sua senha" />
+
+          <p id="mensagem-erro"></p>
+          
+          <input class="button" type="button" onclick="fazerLogin()" value="Quero entrar no meu paínel do aluno!" />
+        </form>
+
+        <p class="texto-login">
+          Faça login caso já seja ingressante ou matriculado e tenha acesso ao ambiente portal do aluno e veja as
+          seguintes informações:
+        </p>
+      </div>
+      <div class="container-curadoria">
+        <div class="circulo">
+          <img class="img-curadoria" src="/img/calendario.png"></img>
+          <p class="texto-curadoria">
+            Calendário curricular interativo!
+          </p>
+        </div>
+        <div class="circulo">
+          <img class="img-curadoria" src="/img/notas.png"></img>
+          <p class="texto-curadoria">
+            Notas e rendimento escolar!
+          </p>
+        </div>
+        <div class="circulo">
+          <img class="img-curadoria" src="/img/question.png"></img>
+          <p class="texto-curadoria">
+            Seção de avisos e comunicados!
+          </p>
+        </div>
+        <div class="circulo">
+          <img class="img-curadoria" src="/img/cpf.png"></img>
+          <p class="texto-curadoria">
+            Grade curriculare e informativos dos cursos!
+          </p>
+        </div>
+      </div>
+      <!-- final do form  -->
+    </div>
+
+    <!-- rodape -->
+    <div class="rodape"></div>
+    <!-- fim do rodape  -->
+
+  </div>
+  <script src="/js/carregarRodape.js"></script>
+</body>
+
+</html>

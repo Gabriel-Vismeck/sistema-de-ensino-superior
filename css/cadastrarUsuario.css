@@ -1,0 +1,84 @@
+@import '/css/cabecalho-portal.css';
+@import '/css/barra-lateral.css';
+@import '/css/rodape.css';
+@import 'layout-paginas.css';
+@import 'barra-rolagem.css';
+@import 'mensagem-erro.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--azul-100) !important;
+    color: black;
+}
+
+.conteudo {
+    padding: 2%;
+}
+
+.conteudo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 758px;
+    margin: auto;
+    background: var(--azul-1000);
+    border: 10px solid var(--azul-400);
+    padding: 77px 99px 87px;
+    border-radius: 25px;
+
+}
+
+.formulario {
+    display: inline-block;
+    color: var(--azul-100);
+
+}
+
+
+.formulario label,
+.formulario input,
+.formulario select {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9px;
+    font-size: large;
+    width: 100%;
+
+}
+
+.formulario #funcionario,
+.formulario #labelFuncionario {
+    display: inline;
+    margin: 8px 0px;
+
+    width: auto;
+}
+
+.formulario button {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    padding: 15px 50px;
+    color: var(--azul-50);
+    background-color: var(--azul-700);
+    border: 1px solid var(--azul-50);
+    border-radius: 25px;
+    transition: all .5s ease;
+    cursor: pointer;
+
+}
+
+.formulario button:hover {
+    color: var(--azul-700);
+    background-color: var(--azul-50);
+    border: 1px solid var(--azul-700);
+}

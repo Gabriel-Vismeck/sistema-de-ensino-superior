@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazer Matrícula</title>
+  <link rel="stylesheet" href="/css/cadastrarUsuario.css">
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="/js/contas.js"></script>
+  <script src="/js/usuarioLogado.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/redirecionarInicio.js"></script>
+  <script src="https://kit.fontawesome.com/31aca91176.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="pagina">
+    <header></header>
+    <div id="barra-lateral" class="fechado"></div>
+    <div class="conteudo">
+      <!--portal do aluno-->
+      <div class="conteudo-principal">
+        <div class="formulario">
+          <label for="nome">Nome:</label>
+          <input id="nome" type="text" placeholder="Nome do aluno">
+
+          <label for="email">E-Mail:</label>
+          <input id="email" type="text" placeholder="E-mail do aluno">
+
+          <label for="datanasc">Data de Nascimento:</label>
+          <input id="datanasc" type="date">
+
+          <input id="funcionario" type="checkbox" onclick="MostrarEsconder(this)">
+          <label id="labelFuncionario" for="funcionario">É funcionário?</label>
+
+          <label id="labelCurso" for="curso">Curso:</label>
+          <select id="selectCurso" name="curso" id="curso">
+            <option value="engenharia-software">Engenharia de Software</option>
+            <option value="medicina">Medicina</option>
+            <option value="direito">Direito</option>
+            <option value="engenharia-mecanica">Engenharia Mecânica</option>
+            <option value="administracao">Administração</option>
+            <option value="comunicacao">Engenharia Mecânica</option>
+          </select>
+
+          <p id="mensagem-erro"></p>
+
+          <button onclick="cadastrar()">Enviar</button>
+        </div>
+      </div>
+      <!--fim do portal do aluno-->
+    </div>
+    <!-- rodape -->
+    <div class="rodape"></div>
+    <!-- fim do rodape  -->
+  </div>
+  <div class="modal fade" id="popupMensagem">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Matrícula</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          Matrícula feita com sucesso
+        </div>
+
+        <div class="modal-footer">
+          <a href="/paginas/cadastrarUsuario.html">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/carregar-cabecalho-portal.js"></script>
+  <script src="/js/barra-lateral.js"></script>
+  <script src="/js/carregarRodape.js"></script>
+  <script src="/js/cadastrarUsuario.js"></script>
+</body>
+
+</html>

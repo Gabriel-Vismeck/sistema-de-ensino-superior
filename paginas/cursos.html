@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Página de cursos</title>
+  <script src="https://kit.fontawesome.com/708face580.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="/js/contas.js"></script>
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+  <link href="/css/cursos.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="pagina">
+  <header>
+    <a href="/index.html">
+      <img src="/img/logo.png" alt="logo"/>
+    </a>
+    <nav>
+      <a href="/index.html">Menu</a>
+      <a href="/paginas/cursos.html">Cursos</a>
+    </nav>
+  </header>
+
+  <div class="conteudo">
+  <!-- área de cursos -->
+  <section class="area-cursos">
+    <div class="container">
+      <div>
+        <br>
+        <h2 class="header-pagina-cursos">
+          Nossos cursos recentes e renomados
+        </h2>
+      </div>
+      <div class="container-cursos">
+        <h4 class="header-cursos">
+          Nossos cursos mais populares
+        </h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="curso">
+              <div class="conteudo-curso">
+                <div class="imagem-curso">
+                  <i class="fa-solid fa-computer fa-2xl"></i>
+                </div>
+                <div class="detalhes-curso">
+                  <h5>
+                    Engenharia de software
+                  </h5>
+                  <div class="dados-curso">
+                    <h6>
+                      <span>
+                        ⭐⭐⭐⭐⭐
+                      </span>
+                    </h6>
+                    <h6>
+                      <i class="fa fa-money" aria-hidden="true"></i>
+                      <span>
+                        $1200 p/mês
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="opcoes-curso">
+                <button class="botao-matricula" onclick="setCurso('engenharia-software')" data-bs-toggle="modal" data-bs-target="#popupMatricula">
+                  Matricule-se agora
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="curso">
+              <div class="conteudo-curso">
+                <div class="imagem-curso">
+                  <i class="fa-solid fa-house-medical fa-2xl" ></i>
+                </div>
+                <div class="detalhes-curso">
+                  <h5>
+                    Medicina
+                  </h5>
+                  <div class="dados-curso">
+                    <h6>
+                      <span>
+                        ⭐⭐⭐⭐⭐
+                      </span>
+                    </h6>
+                    <h6>
+                      <i class="fa fa-money" aria-hidden="true"></i>
+                      <span>
+                        $2200 p/mês
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="opcoes-curso">
+                <button class="botao-matricula" onclick="setCurso('medicina')" data-bs-toggle="modal" data-bs-target="#popupMatricula">
+                  Matricule-se agora
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-cursos">
+        <h4 class="header-cursos">
+        </h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="curso">
+              <div class="conteudo-curso">
+                <div class="imagem-curso">
+                  <i class="fa-solid fa-scale-balanced fa-2xl"></i>
+                </div>
+                <div class="detalhes-curso">
+                  <h5>
+                    Direito
+                  </h5>
+                  <div class="dados-curso">
+                    <h6>
+                      <span>
+                        ⭐⭐⭐⭐⭐
+                      </span>
+                    </h6>
+                    <h6>
+                      <i class="fa fa-money" aria-hidden="true"></i>
+                      <span>
+                        $1200 p/mês
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="opcoes-curso">
+                <button class="botao-matricula" onclick="setCurso('direito')" data-bs-toggle="modal" data-bs-target="#popupMatricula">
+                  Matricule-se agora
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="curso">
+              <div class="conteudo-curso">
+                <div class="imagem-curso">
+                  <i class="fa-solid fa-gear fa-2xl"></i>
+                </div>
+                <div class="detalhes-curso">
+                  <h5>
+                    Engenharia Mecânica
+                  </h5>
+                  <div class="dados-curso">
+                    <h6>
+                      <span>
+                        ⭐⭐⭐⭐⭐
+                      </span>
+                    </h6>
+                    <h6>
+                      <i class="fa fa-money" aria-hidden="true"></i>
+                      <span>
+                        $1236 p/mês 
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="opcoes-curso">
+                <button class="botao-matricula" onclick="setCurso('engenharia-mecanica')" data-bs-toggle="modal" data-bs-target="#popupMatricula">
+                  Matricule-se agora
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="curso">
+              <div class="conteudo-curso">
+                <div class="imagem-curso">
+                  <i class="fa-solid fa-suitcase fa-2xl"></i>
+                </div>
+                <div class="detalhes-curso">
+                  <h5>
+                    Administração
+                  </h5>
+                  <div class="dados-curso">
+                    <h6>
+                      <span>
+                        ⭐⭐⭐⭐⭐
+                      </span>
+                    </h6>
+                    <h6>
+                      <i class="fa fa-money" aria-hidden="true"></i>
+                      <span>
+                        $4200 p/mês
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="opcoes-curso">
+                <button class="botao-matricula" onclick="setCurso('administracao')" data-bs-toggle="modal" data-bs-target="#popupMatricula">
+                  Matricule-se agora
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="curso">
+              <div class="conteudo-curso">
+                <div class="imagem-curso">
+                  <i class="fa-solid fa-comments fa-2xl"></i>
+                </div>
+                <div class="detalhes-curso">
+                  <h5>
+                    Comunicação Social
+                  </h5>
+                  <div class="dados-curso">
+                    <h6>
+                      <span>
+                        ⭐⭐⭐⭐⭐
+                      </span>
+                    </h6>
+                    <h6>
+                      <i class="fa fa-money" aria-hidden="true"></i>
+                      <span>
+                        $1350 p/mês
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="opcoes-curso">
+                <button class="botao-matricula" onclick="setCurso('comunicacao')" data-bs-toggle="modal" data-bs-target="#popupMatricula">
+                  Matricule-se agora
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- fim dos cursos -->
+  <br>
+  </div>
+  <div class="rodape"></div>
+
+  </div>
+  <!-- Popup da Matricula -->
+  <div class="modal fade" id="popupMatricula" tabindex="-1" aria-labelledby="popupMatriculaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popupMatriculaLabel">Matricule-se</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="formulario">
+            <input id="curso" type="hidden">
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text">
+            <label for="email">E-Mail:</label>
+            <input id="email" type="text">
+            <label for="datanasc">Data de Nascimento:</label>
+            <input id="datanasc" type="date">
+            <p id="mensagem-erro"></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="cadastrar()">Fazer Matricula</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Popup da Matricula -->
+  <div class="modal fade" id="popupMensagem" tabindex="-2" aria-labelledby="popupMensagemLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popupMensagemLabel">Matricula</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Matrícula feita com sucesso!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/cursos.js"></script>
+  <script src="/js/carregarRodape.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+:root {
+  --bs-body-font-family: 'Poppins', sans-serif !important;
+}
+
+/* Fazer com que o html ocupe a tela inteira */
+html {
+    height: 100%;
+    font-family: var(--bs-body-font-family);
+}
+
+body {
+    margin: 0;
+    /* Fazer com que o body ocupe a tela inteira, menos o tamanho do rodapé */
+    height: calc(100% - 220px)
+}
+
+body .pagina {
+    height: auto;
+    min-height: 100%;
+}
+
+.pagina {
+    width: 100%;
+    position: relative;
+}
+
+.rodape {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -220px;
+}
+
+@media (max-width: 767px) {
+  body {
+    /* Fazer com que o body ocupe a tela inteira, menos o tamanho do rodapé */
+    height: calc(100% - 400px)
+  }
+
+  .rodape {
+    margin-bottom: -400px;
+    height: 400px;
+  }
+  }

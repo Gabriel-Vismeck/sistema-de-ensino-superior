@@ -1,0 +1,89 @@
+@import '/css/cabecalho-portal.css';
+@import '/css/barra-lateral.css';
+@import '/css/rodape.css';
+@import 'layout-paginas.css';
+@import 'barra-rolagem.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: var(--azul-100) !important;
+}
+
+.conteudo {
+  padding: 2%;
+}
+
+#calendario {
+  max-width: 750px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  color: #555;
+}
+
+#calendario h1 {
+  background: var(--azul-400);
+  border-radius: 25px 25px 0 0;
+  padding: 20px;
+  font-size: 140%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--azul-50);
+  cursor: default;
+  margin: 0px;
+}
+
+#calendario table {
+  border-top: 10px solid var(--azul-500);
+  border-left: 10px solid var(--azul-500);
+  border-right: 10px solid var(--azul-500);
+  border-bottom: 10px solid var(--azul-500);
+  border-spacing: 0;
+  border-radius: 0 0 25px 25px !important;
+}
+
+#calendario td {
+  width: 1023230px;
+  height: 90px;
+  background: #eee;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 6px;
+  cursor: pointer;
+  transition: background .3s;
+  -webkit-transition: background .3s;
+}
+
+#calendario td:hover:not(.hoje) {
+  background: var(--azul-200);
+}
+
+#calendario .mes-anterior,
+#calendario .proximo-mes,
+#calendario .proximo-mes~* {
+  background: #fff;
+  color: #999;
+}
+
+#calendario .hoje {
+  background: var(--azul-400);
+  font-weight: 700;
+  color: var(--azul-50);
+}
+
+#calendario .hastask {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  #calendario td {
+    height: 60px;
+  }
+}

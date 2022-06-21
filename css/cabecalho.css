@@ -1,0 +1,64 @@
+@import 'cores.css';
+
+header {
+    background-color: var(--azul-900);
+    height: 150px;
+    width: 100%;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    margin-left: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+header nav a:hover {
+    color: var(--azul-600);
+    background-color: var(--azul-100);
+    transition: 0.3s all ease;
+}
+
+header nav {
+    margin-right: 30px;
+}
+
+header nav a {
+    margin-left: 15px;
+    background-color: var(--azul-600);
+    color: var(--azul-50);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    header img {
+        height: auto;
+        margin: 0 auto;
+    }
+}

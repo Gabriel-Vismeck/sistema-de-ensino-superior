@@ -1,0 +1,98 @@
+header {
+    background-color: var(--azul-900);
+    height: 75px;
+    width: 100%;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    margin-left: 30px;
+    width: 75px;
+    height: 75px;
+}
+
+header nav {
+    margin-right: 30px;
+}
+
+header nav a {
+    margin-left: 15px;
+    background-color: var(--azul-600);
+    color: var(--azul-50);
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+header nav a:hover {
+    color: var(--azul-600);
+    background-color: var(--azul-100);
+    transition: 0.3s all ease;
+}
+
+header .botoes-header {
+    display: flex;
+}
+
+header .botao-sidebar {
+    margin-left: 10px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    background-color: transparent;
+}
+
+header .botao-sidebar i {
+    cursor: pointer;
+    color: var(--azul-50);
+    border-radius: 5px;
+    border: 2px solid var(--azul-600);
+    font-size: 28px;
+    background: var(--azul-1000);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .3s ease;
+}
+
+header .botao-sidebar i:hover {
+    color: var(--azul-1000);
+    border: 2px solid var(--azul-1000);
+    background: var(--azul-600);
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    header img {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    header .botao-sidebar {
+        display: none;
+    }
+}

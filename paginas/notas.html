@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de notas</title>
+  <link rel="stylesheet" href="/css/notas.css">
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+  <script src="/js/contas.js"></script>
+  <script src="/js/usuarioLogado.js"></script>
+  <script src="/js/logout.js"></script>
+  <script src="/js/redirecionarInicio.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/31aca91176.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="pagina">
+    <header></header>
+    <div id="barra-lateral" class="fechado"></div>
+    <div class="conteudo">
+      <!--perfil do usuario logado-->
+      <div class="dados-pagina">
+        <div class="dados-usuario">
+          <label class="item-form" for="materia0">Materia 1:</label>
+          <input class="item-form" id="materia0" type="text" disabled>
+
+          <label class="item-form" for="materia1">Materia 2:</label>
+          <input class="item-form" id="materia1" type="text" disabled>
+
+          <label class="item-form" for="materia2">Materia 3:</label>
+          <input class="item-form" id="materia2" type="text" disabled>
+
+          <label class="item-form" for="materia3">Materia 4:</label>
+          <input class="item-form" id="materia3" type="text" disabled>
+        </div>
+      </div>
+      <!--fim do perfil do usuario logado-->
+    </div>
+    <!-- rodape -->
+    <div class="rodape"></div>
+    <!-- fim do rodape  -->
+  </div>
+  <script src="/js/carregar-cabecalho-portal.js"></script>
+  <script src="/js/barra-lateral.js"></script>
+  <script src="/js/carregarRodape.js"></script>
+  <script src="/js/notas.js"></script>
+</body>
+
+</html>

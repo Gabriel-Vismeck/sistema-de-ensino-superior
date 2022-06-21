@@ -1,0 +1,208 @@
+@import '/css/cabecalho-portal.css';
+@import '/css/barra-lateral.css';
+@import '/css/rodape.css';
+@import '/css/cores.css';
+@import 'layout-paginas.css';
+@import 'barra-rolagem.css';
+@import 'mensagem-erro.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  color: var(--azul-50);
+}
+
+body {
+  background-color: var(--azul-100) !important;
+  color: var(--azul-100) !important;
+  font-size: 15px;
+  margin: 0;
+}
+
+.conteudo {
+  padding: 2%;
+}
+
+.modal {
+  color: black;
+}
+
+input,
+textarea,
+button {
+  color: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+:focus {
+  outline: none;
+}
+
+.interno {
+  max-width: 758px;
+  margin: auto;
+  background: var(--azul-1000);
+  border: 10px solid var(--azul-400);
+  padding: 77px 99px 87px;
+  border-radius: 25px;
+}
+
+textarea {
+  resize: none;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+p {
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 55px;
+  line-height: 1.8;
+}
+
+.formulario {
+  position: relative;
+  display: block;
+  margin-bottom: 48px;
+}
+
+.formulario span {
+  font-size: 15px;
+  color: var(--azul-100);
+  position: absolute;
+  top: 11px;
+  transition: all .2s ease;
+  transform-origin: 0 0;
+  cursor: text;
+}
+
+.formulario span.border {
+  height: 2px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 41px;
+  transform: scaleX(0);
+  transition: all .15s ease;
+  background: var(--azul-50);
+}
+
+.formulario-controle {
+  border: none;
+  border-bottom: 2px solid var(--azul-500);
+  display: block;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  background: none;
+  resize: none;
+  line-height: normal;
+}
+
+.formulario-controle:focus,
+.formulario-controle:valid {
+  border-bottom: 2px solid var(--azul-50);
+}
+
+.formulario-controle:focus+span,
+.formulario-controle:valid+span {
+  transform: translateY(-22px) scale(0.8);
+}
+
+.formulario-controle:focus+span+.border,
+.formulario-controle:valid+span+.border {
+  transform: scaleX(1);
+}
+
+textarea.formulario-controle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#botao {
+  border: none;
+  width: 162px;
+  height: 51px;
+  border: 2px solid var(--azul-500);
+  margin: auto;
+  margin-top: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  color: var(--azul-50);
+  text-transform: uppercase;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+#botao i {
+  margin-left: 10px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#botao:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--azul-500);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#botao:hover {
+  border-color: transparent;
+}
+
+#botao:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#botao:hover i {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 38px;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 0;
+  }
+
+
+}

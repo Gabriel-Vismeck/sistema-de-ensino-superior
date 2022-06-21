@@ -1,0 +1,49 @@
+@import '/css/cabecalho-portal.css';
+@import '/css/barra-lateral.css';
+@import '/css/rodape.css';
+@import '/css/cores.css';
+@import 'layout-paginas.css';
+@import 'barra-rolagem.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--azul-100) !important;
+}
+
+.conteudo {
+    padding: 2%;
+}
+
+.inferior-inicial {
+    background-color: var(--azul-50);
+    color: black;
+    padding: 50px;
+    margin: 50px;
+    margin-top: 60px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+#venha,
+#conheca,
+#clique {
+    margin: auto;
+    display: block;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        width: 75% !important;
+    }
+}

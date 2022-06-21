@@ -1,0 +1,15 @@
+@import 'cores.css';
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--azul-100);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--azul-1000);
+    border-radius: 25px;
+    border: 2px solid var(--azul-100);
+}
