@@ -13,6 +13,18 @@ Uma simples e prática simulação de um sistema web com autênticação de uma 
 * Boa responsividade de comandos.
 ##
 Sistema feito usando as linguagens HTML, CSS e JavaScript.
+
+Login e senhas padrões:
+<br>
+<br>
+Email: func@email.com (para o login como funcionário)
+<br>
+Senha: senha1
+<br>
+<br>
+Email: user@email.com (para o login como aluno)
+<br>
+Senha: senha2
 ##
 >"Educação é uma descoberta progressiva de nossa própria ignorância."
 >
