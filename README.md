@@ -17,6 +17,11 @@ Sistema feito usando as linguagens HTML, CSS e JavaScript.
 Login e senhas padrões:
 <br>
 <br>
+
+Para visualizar o site em funcionamento basta acessar o link: https://universidade-ensino-superior.000webhostapp.com/index.html.
+<br>
+Caso queira visualizar por si mesmo, você pode baixar os arquivos e abrir com Visual Studio Code usando a extensão Live Server. 
+
 Email: func@email.com (para o login como funcionário)
 <br>
 Senha: senha1
