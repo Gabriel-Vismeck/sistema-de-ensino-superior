@@ -18,7 +18,7 @@ Login e senhas padrões:
 <br>
 <br>
 
-Para visualizar o site em funcionamento basta acessar o link: https://universidade-ensino-superior.000webhostapp.com/index.html.
+Para visualizar o site em funcionamento basta acessar o link: https://abre.ai/ensino-superior.
 <br>
 Caso queira visualizar por si mesmo, você pode baixar os arquivos e abrir com Visual Studio Code usando a extensão Live Server. 
 
